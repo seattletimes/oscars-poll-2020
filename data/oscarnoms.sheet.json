@@ -1,0 +1,206 @@
+[
+  {
+    "Category": "Best Picture",
+    "Title": "Ford V Ferrari ",
+    "Actor": "",
+    "img_id": "bestpic_ford"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "The Irishman",
+    "Actor": "",
+    "img_id": "bestpic_irishman"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Jojo Rabbit",
+    "Actor": "",
+    "img_id": "bestpic_jojo"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Joker",
+    "Actor": "",
+    "img_id": "bestpic_joker"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Little Women",
+    "Actor": "",
+    "img_id": "bestpic_women"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Marriage Story",
+    "Actor": "",
+    "img_id": "bestpic_marriage"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": 1917,
+    "Actor": "",
+    "img_id": "bestpic_1917"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Once Upon a Time...In Hollywood",
+    "Actor": "",
+    "img_id": "bestpic_hollywood"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Parasite",
+    "Actor": "",
+    "img_id": "bestpic_parasite"
+  },
+  {
+    "Category": "Best Actor",
+    "Title": "Pain and Glory",
+    "Actor": "Antonio Banderas",
+    "img_id": "bestactor_antonio"
+  },
+  {
+    "Category": "Best Actor",
+    "Title": "Once Upon a Time...In Hollywood",
+    "Actor": "Leonardo DiCaprio",
+    "img_id": "bestactor_leo"
+  },
+  {
+    "Category": "Best Actor",
+    "Title": "Marriage Story",
+    "Actor": "Adam Driver",
+    "img_id": "bestactor_adam"
+  },
+  {
+    "Category": "Best Actor",
+    "Title": "Joker",
+    "Actor": "Joaquin Phoenix",
+    "img_id": "bestactor_juaquin"
+  },
+  {
+    "Category": "Best Actor",
+    "Title": "The Two Popes",
+    "Actor": "Jonathan Pryce",
+    "img_id": "bestactor_jonathan"
+  },
+  {
+    "Category": "Best Supporting Actor",
+    "Title": "A Beautiful Day in the Neighborhood",
+    "Actor": "Tom Hanks",
+    "img_id": "supportingactor_tom"
+  },
+  {
+    "Category": "Best Supporting Actor",
+    "Title": "The Two Popes",
+    "Actor": "Anthony Hopkins",
+    "img_id": "supportingactor_anthony"
+  },
+  {
+    "Category": "Best Supporting Actor",
+    "Title": "The Irishman",
+    "Actor": "Al Pacino",
+    "img_id": "supportingactor_al"
+  },
+  {
+    "Category": "Best Supporting Actor",
+    "Title": "The Irishman",
+    "Actor": "Joe Pesci",
+    "img_id": "supportingactor_joe"
+  },
+  {
+    "Category": "Best Supporting Actor",
+    "Title": "Once Upon a Time...In Hollywood",
+    "Actor": "Brad Pitt",
+    "img_id": "supportingactor_brad"
+  },
+  {
+    "Category": "Best Actress",
+    "Title": "Harriet",
+    "Actor": "Cynthia Erivo",
+    "img_id": "bestactress_cynthia"
+  },
+  {
+    "Category": "Best Actress",
+    "Title": "Marriage Story",
+    "Actor": "Scarlett Johansson",
+    "img_id": "bestactress_scarlett"
+  },
+  {
+    "Category": "Best Actress",
+    "Title": "Little Women",
+    "Actor": "Saorise Ronan",
+    "img_id": "bestactress_ronan"
+  },
+  {
+    "Category": "Best Actress",
+    "Title": "Bombshell",
+    "Actor": "Charlize Theron",
+    "img_id": "bestactress_charlize"
+  },
+  {
+    "Category": "Best Actress",
+    "Title": "Judy",
+    "Actor": "Renee Zellweger",
+    "img_id": "bestactress_renee"
+  },
+  {
+    "Category": "Best Supporting Actress",
+    "Title": "Richard Jewell",
+    "Actor": "Kathy Bates",
+    "img_id": "supportingactress_kathy"
+  },
+  {
+    "Category": "Best Supporting Actress",
+    "Title": "Marriage Story",
+    "Actor": "Laura Dern",
+    "img_id": "supportingactress_laura"
+  },
+  {
+    "Category": "Best Supporting Actress",
+    "Title": "Jojo Rabbit",
+    "Actor": "Scarlett Johansson",
+    "img_id": "supportingactress_scarlett"
+  },
+  {
+    "Category": "Best Supporting Actress",
+    "Title": "Little Women",
+    "Actor": "Florence Pugh",
+    "img_id": "supportingactress_florence"
+  },
+  {
+    "Category": "Best Supporting Actress",
+    "Title": "Bombshell",
+    "Actor": "Margot Robbie",
+    "img_id": "supportingactress_margot"
+  },
+  {
+    "Category": "Best Director",
+    "Title": "The Irishman",
+    "Actor": "Martin Scorsese",
+    "img_id": "bestdirector_martin"
+  },
+  {
+    "Category": "Best Director",
+    "Title": "Joker",
+    "Actor": "Todd Phillips",
+    "img_id": "bestdirector_todd"
+  },
+  {
+    "Category": "Best Director",
+    "Title": 1917,
+    "Actor": "Sam Mendes",
+    "img_id": "bestdirector_sam"
+  },
+  {
+    "Category": "Best Director",
+    "Title": "Once Upon a Time...In Hollywood",
+    "Actor": "Quentin Tarantino",
+    "img_id": "bestdirector_quentin"
+  },
+  {
+    "Category": "Best Director",
+    "Title": "Parasite",
+    "Actor": "Bong Joon Ho",
+    "img_id": "bestdirector_joon"
+  }
+]

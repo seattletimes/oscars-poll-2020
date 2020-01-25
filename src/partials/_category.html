@@ -1,0 +1,113 @@
+<div class="catGroup">
+<% json.oscarnoms.forEach(function(item, i) { %>
+  <% if(item.Category == "Best Picture") { %>
+  <div class="completeEntry">
+  <div class="img">
+    <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+  </div>
+  <div class="entry" data-id="<%= item.Title %><%= item.Category %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>">
+
+      <div class="title" data-item-title="<%= item.Title %>"><%= item.Title %></div>
+
+      <div class="perVotes"></div>
+  </div>
+  </div>
+  <% } %>
+<% }) %>
+</div>
+
+<h2 class="pollHeads">Best Actor Nominees</h2>
+<div class="catGroup">
+<% json.oscarnoms.forEach(function(item, i) { %>
+  <% if(item.Category == "Best Actor") { %>
+  <div class="completeEntry">
+  <div class="img">
+    <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+  </div>
+  <div class="entry" data-id="<%= item.Title %><%= item.Category %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>">
+
+      <div class="title" data-item-title="<%= item.Title %>"><%= item.Actor %>, in <%= item.Title %></div>
+
+      <div class="perVotes"></div>
+  </div>
+  </div>
+  <% } %>
+<% }) %>
+</div>
+
+<h2 class="pollHeads">Best Actress Nominees</h2>
+<div class="catGroup">
+  <% json.oscarnoms.forEach(function(item, i) { %>
+    <% if(item.Category == "Best Actress") { %>
+    <div class="completeEntry">
+    <div class="img">
+      <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+    </div>
+    <div class="entry" data-id="<%= item.Title %><%= item.Category %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>">
+
+        <div class="title" data-item-title="<%= item.Title %>"><%= item.Actor %>, in <%= item.Title %></div>
+
+        <div class="perVotes"></div>
+    </div>
+    </div>
+    <% } %>
+  <% }) %>
+</div>
+
+<h2 class="pollHeads">Best Supporting Actor Nominees</h2>
+<div class="catGroup">
+<% json.oscarnoms.forEach(function(item, i) { %>
+  <% if(item.Category == "Best Supporting Actor") { %>
+  <div class="completeEntry">
+  <div class="img">
+    <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+  </div>
+  <div class="entry" data-id="<%= item.Title %><%= item.Category %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>">
+
+      <div class="title" data-item-title="<%= item.Title %>"><%= item.Actor %>, in <%= item.Title %></div>
+
+      <div class="perVotes"></div>
+  </div>
+  </div>
+  <% } %>
+<% }) %>
+</div>
+
+<h2 class="pollHeads">Best Supporting Actress Nominees</h2>
+<div class="catGroup">
+<% json.oscarnoms.forEach(function(item, i) { %>
+  <% if(item.Category == "Best Supporting Actress") { %>
+  <div class="completeEntry">
+  <div class="img">
+    <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+  </div>
+  <div class="entry" data-id="<%= item.Title %><%= item.Category %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>">
+
+      <div class="title" data-item-title="<%= item.Title %>"><%= item.Actor %>, in <%= item.Title %></div>
+
+      <div class="perVotes"></div>
+  </div>
+  </div>
+  <% } %>
+<% }) %>
+</div>
+
+<h2 class="pollHeads">Best Director Nominees</h2>
+<div class="catGroup">
+  <% json.oscarnoms.forEach(function(item, i) { %>
+    <% if(item.Category == "Best Director") { %>
+    <div class="completeEntry">
+    <div class="img">
+      <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+    </div>
+    <div class="entry" data-id="<%= item.Title %><%= item.Category %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>">
+
+        <div class="title" data-item-title="<%= item.Title %>"><%= item.Actor %></div>
+
+        <div class="perVotes"></div>
+    </div>
+    <div class="roleIn"><%= item.Title %></div>
+    </div>
+    <% } %>
+  <% }) %>
+</div>

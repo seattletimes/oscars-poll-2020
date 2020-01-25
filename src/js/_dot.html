@@ -1,0 +1,12 @@
+<div
+  class="point-container <%= data.team %> <%= data.user %>"
+  data-score="<%= data.a %>-<%= data.b %>"
+  style="left: <%= data.x %>%; bottom: <%= data.y %>%;">
+
+  <div class="point <%= data.fade %>"></div>
+  <div class="tooltip">
+    <div class="score"><%= data.winner %>-<%= data.loser %></div>
+    <div class="team"><%= data.title %></div>
+    <div class="count">Fan Count: <%= data.count %></div>
+  </div>
+</div>

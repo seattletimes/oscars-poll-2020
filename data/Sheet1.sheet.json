@@ -1,0 +1,163 @@
+[
+  {
+    "Category": "Best Picture",
+    "Title": "Ford V Ferrari "
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "The Irishman"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Jojo Rabbit"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Joker"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Little Women"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Marriage Story"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": 1917
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Once Upon a Time...In Hollywood"
+  },
+  {
+    "Category": "Best Picture",
+    "Title": "Parasite"
+  },
+  {
+    "Category": "Best Actor",
+    "Title": "Pain and Glory",
+    "Actor": "Antonio Banderas"
+  },
+  {
+    "Category": "Best Actor",
+    "Title": "Once Upon a Time...In Hollywood",
+    "Actor": "Leonardo DiCaprio"
+  },
+  {
+    "Category": "Best Actor",
+    "Title": "Marriage Story",
+    "Actor": "Adam Driver"
+  },
+  {
+    "Category": "Best Actor",
+    "Title": "Joker",
+    "Actor": "Joaquin Phoenix"
+  },
+  {
+    "Category": "Best Actor",
+    "Title": "The Two Popes",
+    "Actor": "Jonathan Pryce"
+  },
+  {
+    "Category": "Best Supporting Actor",
+    "Title": "A Beautiful Day in the Neighborhood",
+    "Actor": "Tom Hanks"
+  },
+  {
+    "Category": "Best Supporting Actor",
+    "Title": "The Two Popes",
+    "Actor": "Anthony Hopkins"
+  },
+  {
+    "Category": "Best Supporting Actor",
+    "Title": "The Irishman",
+    "Actor": "Al Pacino"
+  },
+  {
+    "Category": "Best Supporting Actor",
+    "Title": "The Irishman",
+    "Actor": "Joe Pesci"
+  },
+  {
+    "Category": "Best Supporting Actor",
+    "Title": "Once Upon a Time...In Hollywood",
+    "Actor": "Brad Pitt"
+  },
+  {
+    "Category": "Best Actress",
+    "Title": "Harriet",
+    "Actor": "Cynthia Erivo"
+  },
+  {
+    "Category": "Best Actress",
+    "Title": "Marriage Story",
+    "Actor": "Scarlett Johansson"
+  },
+  {
+    "Category": "Best Actress",
+    "Title": "Little Women",
+    "Actor": "Saorise Ronan"
+  },
+  {
+    "Category": "Best Actress",
+    "Title": "Bombshell",
+    "Actor": "Charlize Theron"
+  },
+  {
+    "Category": "Best Actress",
+    "Title": "Judy",
+    "Actor": "Renee Zellweger"
+  },
+  {
+    "Category": "Best Supporting Actress",
+    "Title": "Richard Jewell",
+    "Actor": "Kathy Bates"
+  },
+  {
+    "Category": "Best Supporting Actress",
+    "Title": "Marriage Story",
+    "Actor": "Laura Dern"
+  },
+  {
+    "Category": "Best Supporting Actress",
+    "Title": "Jojo Rabbit",
+    "Actor": "Scarlett Johansson"
+  },
+  {
+    "Category": "Best Supporting Actress",
+    "Title": "Little Women",
+    "Actor": "Florence Pugh"
+  },
+  {
+    "Category": "Best Supporting Actress",
+    "Title": "Bombshell",
+    "Actor": "Margot Robbie"
+  },
+  {
+    "Category": "Best Director",
+    "Title": "The Irishman",
+    "Actor": "Martin Scorsese"
+  },
+  {
+    "Category": "Best Director",
+    "Title": "Joker",
+    "Actor": "Todd Phillips"
+  },
+  {
+    "Category": "Best Director",
+    "Title": 1917,
+    "Actor": "Sam Mendes"
+  },
+  {
+    "Category": "Best Director",
+    "Title": "Once Upon a Time...In Hollywood",
+    "Actor": "Quentin Tarantino"
+  },
+  {
+    "Category": "Best Director",
+    "Title": "Parasite",
+    "Actor": "Bong Joon Ho"
+  }
+]
