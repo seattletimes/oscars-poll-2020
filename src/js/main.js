@@ -5,18 +5,39 @@ var votes = require("../../data/predictions.sheet.json");
 var total = 0;
 var width = $(".entry").width();
 const obj = {};
+var savedPicks = [];
+
+if (getCookie("OscVotes")) {
+  var pickedArray = getCookie("OscVotes");
+  var pickedSplitArray = pickedArray.split(",");
+  // console.log(pickedArray);
+
+  $.each(pickedSplitArray, function(index, element) {
+    // showVoteTallies(elementAfterPipe);
+    // highlight previously picked entry with elementBeforePipe
+  });
+
+} else {
+  console.log("Vote with reckless abandon");
+}
 
 function getCookie(name) {
     var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+    console.log(v);
     return v ? v[2] : null;
 }
 
 function submitHandler(e, entry){
     var title = $( entry ).attr( "data-title" );
     var category = $( entry ).attr( "data-category" );
+    var thisMovie = $( entry ).attr( "data-id" );
+    savedPicks.push(thisMovie + "|" + category);
+    console.log(savedPicks);
+
+
     var formData = new FormData();
     total = total + 1;
-    var thisMovie = title + category;
+
 
     if ( obj.hasOwnProperty(thisMovie) ) {
       obj[thisMovie] = (obj[thisMovie] + 1);
@@ -34,23 +55,15 @@ function submitHandler(e, entry){
     showVoteTallies(category);
 
 
-    if (getCookie("asdasd")) {
-        console.log("Hi im if");
-        $('#nom-holder').append("Looks like you've already voted, come back tomorrow to vote again");
-        // init();
-        // svgContainer.style.display = "inline-block";
-    } else{
-        console.log("Hi im else");
-        var d = new Date();
-        d.setTime(d.getTime() + 24 * 60 * 60 * 1000);
-        document.cookie = "vote="+title + "; expires=" + d.toGMTString() + ";";
-        e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: formData })
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message));
-        // setTimeout(function() { init(); }, 1000);
-        // svgContainer.style.display = "inline-block";
-    }
+    var d = new Date();
+    d.setTime(d.getTime() + 24 * 60 * 60 * 1000);
+    document.cookie = "OscVotes="+savedPicks + "; expires=" + d.toGMTString() + ";";
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: formData })
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message));
+
+    getCookie("OscVotes");
 }
 
 
@@ -59,6 +72,8 @@ $( ".entry" ).click(function(a) {
   submitHandler(a, thisEntry);
   // console.log(this);
 });
+
+
 
 
 
@@ -80,6 +95,9 @@ $.each(votes, function(index, element) {
 
 
 function showVoteTallies(selectedCategory) {
+  $( `*[data-category="${ selectedCategory }"]` ).addClass("voted").css("opacity","0.6");
+  $( `*[data-category="${ selectedCategory }"]` ).find(".entry").css("pointer-events","none");
+
   for(var propertyName in obj) {
     if( propertyName.includes(selectedCategory) ){
       var value = obj[propertyName];
@@ -94,6 +112,6 @@ function showVoteTallies(selectedCategory) {
 
 
 
-console.log(total);
-// console.log(width);
-console.log(obj);
+// console.log(total);
+// // console.log(width);
+// console.log(obj);
