@@ -9,18 +9,24 @@
   .catGroup {
     margin-bottom: 5em;
 
-    .completeEntry { clear: both; }
+    .completeEntry {
+      clear: both;
+      width: 32%;
+      display: inline-block;
+      margin-bottom: 1em;
+      vertical-align: top;
+    }
   }
 }
 
 .entry {
-  display: inline-block;
+  // display: inline-block;
   font-family: sans-serif;
   background-color: #eee;
   border-radius: 5px;
-  margin-left: 5px;
+  // margin-left: 5px;
   padding: 1em;
-  width: ~"calc(100% - 205px)";
+  // width: ~"calc(100% - 155px)";
 
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, #fdce77));
   background-image: linear-gradient(180deg, transparent 0%, #fdce77 0%);
@@ -34,20 +40,20 @@
 
   .title { display: inline-block; font-weight: bold;}
   .perVotes { display: inline-block; }
+  .crit_pics { display: inline-block; }
 }
 
 .img {
-  max-width: @img-width;
-  float: left;
+  // max-width: @img-width;
   vertical-align: top;
 
   img { width: 100%; }
 }
 
 .roleIn {
-  width: ~"calc(100% - 205px)";
-  display: inline-block;
-  margin-left: 5px;
+  // width: ~"calc(100% - 155px)";
+  // display: inline-block;
+  // margin-left: 5px;
   font-family: sans-serif;
   font-style: italic;
   font-weight: lighter;

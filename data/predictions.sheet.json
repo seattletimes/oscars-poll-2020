@@ -1,237 +1,110 @@
 [
   {
-    "vote": 1917,
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
-  },
-  {
     "vote": "Ford V Ferrari ",
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": "Jojo Rabbit",
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": 1917,
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": "Parasite",
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": "Ford V Ferrari ",
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": "Pain and Glory",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Ford V Ferrari ",
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": "The Irishman",
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
+    "timestamp": "1/29/2020",
+    "category": "Best Picture",
+    "actor": "cast"
   },
   {
     "vote": "Marriage Story",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Joker",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "The Two Popes",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "The Two Popes",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "The Two Popes",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Pain and Glory",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Marriage Story",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Marriage Story",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Marriage Story",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Pain and Glory",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Marriage Story",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Marriage Story",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Marriage Story",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Once Upon a Time...In Hollywood",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Marriage Story",
-    "timestamp": "1/24/2020",
-    "category": "Best Supporting Actress"
-  },
-  {
-    "vote": "The Irishman",
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
+    "timestamp": "1/29/2020",
+    "category": "Best Actor",
+    "actor": "Adam Driver"
   },
   {
     "vote": "Harriet",
-    "timestamp": "1/24/2020",
-    "category": "Best Actress"
+    "timestamp": "1/29/2020",
+    "category": "Best Actress",
+    "actor": "Cynthia Erivo"
   },
   {
-    "vote": "Once Upon a Time...In Hollywood",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "Pain and Glory",
-    "timestamp": "1/24/2020",
-    "category": "Best Actor"
-  },
-  {
-    "vote": "The Irishman",
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": "Jojo Rabbit",
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": "Little Women",
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": "Little Women",
-    "timestamp": "1/24/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": "Bombshell",
-    "timestamp": "1/28/2020",
-    "category": "Best Actress"
+    "vote": "The Two Popes",
+    "timestamp": "1/29/2020",
+    "category": "Best Supporting Actor",
+    "actor": "Anthony Hopkins"
   },
   {
     "vote": "Marriage Story",
-    "timestamp": "1/28/2020",
-    "category": "Best Actress"
+    "timestamp": "1/29/2020",
+    "category": "Best Supporting Actress",
+    "actor": "Laura Dern"
+  },
+  {
+    "vote": 1917,
+    "timestamp": "1/29/2020",
+    "category": "Best Director",
+    "actor": "Sam Mendes"
+  },
+  {
+    "vote": "Jojo Rabbit",
+    "timestamp": "1/29/2020",
+    "category": "Best Picture",
+    "actor": "cast"
+  },
+  {
+    "vote": "Once Upon a Time...In Hollywood",
+    "timestamp": "1/29/2020",
+    "category": "Best Actor",
+    "actor": "Leonardo DiCaprio"
+  },
+  {
+    "vote": "Judy",
+    "timestamp": "1/29/2020",
+    "category": "Best Actress",
+    "actor": "Renee Zellweger"
+  },
+  {
+    "vote": "The Irishman",
+    "timestamp": "1/29/2020",
+    "category": "Best Supporting Actor",
+    "actor": "Al Pacino"
+  },
+  {
+    "vote": "Jojo Rabbit",
+    "timestamp": "1/29/2020",
+    "category": "Best Supporting Actress",
+    "actor": "Scarlett Johansson"
+  },
+  {
+    "vote": "The Irishman",
+    "timestamp": "1/29/2020",
+    "category": "Best Director",
+    "actor": "Martin Scorsese"
+  },
+  {
+    "vote": "Little Women",
+    "timestamp": "1/29/2020",
+    "category": "Best Picture",
+    "actor": "cast"
+  },
+  {
+    "vote": "The Two Popes",
+    "timestamp": "1/29/2020",
+    "category": "Best Actor",
+    "actor": "Jonathan Pryce"
+  },
+  {
+    "vote": "Harriet",
+    "timestamp": "1/29/2020",
+    "category": "Best Actress",
+    "actor": "Cynthia Erivo"
+  },
+  {
+    "vote": "The Irishman",
+    "timestamp": "1/29/2020",
+    "category": "Best Supporting Actor",
+    "actor": "Joe Pesci"
   },
   {
     "vote": "Richard Jewell",
-    "timestamp": "1/28/2020",
-    "category": "Best Supporting Actress"
-  },
-  {
-    "vote": "Little Women",
-    "timestamp": "1/28/2020",
-    "category": "Best Supporting Actress"
-  },
-  {
-    "vote": "Bombshell",
-    "timestamp": "1/28/2020",
-    "category": "Best Supporting Actress"
-  },
-  {
-    "vote": "Jojo Rabbit",
-    "timestamp": "1/28/2020",
-    "category": "Best Supporting Actress"
-  },
-  {
-    "vote": "Marriage Story",
-    "timestamp": "1/28/2020",
-    "category": "Best Supporting Actress"
-  },
-  {
-    "vote": 1917,
-    "timestamp": "1/28/2020",
-    "category": "Best Director"
-  },
-  {
-    "vote": "The Irishman",
-    "timestamp": "1/28/2020",
-    "category": "Best Director"
-  },
-  {
-    "vote": "Once Upon a Time...In Hollywood",
-    "timestamp": "1/28/2020",
-    "category": "Best Director"
-  },
-  {
-    "vote": "Parasite",
-    "timestamp": "1/28/2020",
-    "category": "Best Director"
+    "timestamp": "1/29/2020",
+    "category": "Best Supporting Actress",
+    "actor": "Kathy Bates"
   },
   {
     "vote": "Joker",
-    "timestamp": "1/28/2020",
-    "category": "Best Director"
-  },
-  {
-    "vote": 1917,
-    "timestamp": "1/28/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": "Marriage Story",
-    "timestamp": "1/28/2020",
-    "category": "Best Picture"
-  },
-  {
-    "vote": "Little Women",
-    "timestamp": "1/28/2020",
-    "category": "Best Supporting Actress"
+    "timestamp": "1/29/2020",
+    "category": "Best Director",
+    "actor": "Todd Phillips"
   }
 ]

@@ -2,56 +2,57 @@
   {
     "Category": "Best Picture",
     "Title": "Ford V Ferrari ",
-    "Actor": "",
+    "Actor": "cast",
     "img_id": "bestpic_ford"
   },
   {
     "Category": "Best Picture",
     "Title": "The Irishman",
-    "Actor": "",
+    "Actor": "cast",
     "img_id": "bestpic_irishman"
   },
   {
     "Category": "Best Picture",
     "Title": "Jojo Rabbit",
-    "Actor": "",
+    "Actor": "cast",
     "img_id": "bestpic_jojo"
   },
   {
     "Category": "Best Picture",
     "Title": "Joker",
-    "Actor": "",
+    "Actor": "cast",
     "img_id": "bestpic_joker"
   },
   {
     "Category": "Best Picture",
     "Title": "Little Women",
-    "Actor": "",
+    "Actor": "cast",
     "img_id": "bestpic_women"
   },
   {
     "Category": "Best Picture",
     "Title": "Marriage Story",
-    "Actor": "",
+    "Actor": "cast",
     "img_id": "bestpic_marriage"
   },
   {
     "Category": "Best Picture",
     "Title": 1917,
-    "Actor": "",
+    "Actor": "cast",
     "img_id": "bestpic_1917"
   },
   {
     "Category": "Best Picture",
     "Title": "Once Upon a Time...In Hollywood",
-    "Actor": "",
+    "Actor": "cast",
     "img_id": "bestpic_hollywood"
   },
   {
     "Category": "Best Picture",
     "Title": "Parasite",
-    "Actor": "",
-    "img_id": "bestpic_parasite"
+    "Actor": "cast",
+    "img_id": "bestpic_parasite",
+    "crit_pics": "X"
   },
   {
     "Category": "Best Actor",
@@ -75,7 +76,8 @@
     "Category": "Best Actor",
     "Title": "Joker",
     "Actor": "Joaquin Phoenix",
-    "img_id": "bestactor_juaquin"
+    "img_id": "bestactor_juaquin",
+    "crit_pics": "X"
   },
   {
     "Category": "Best Actor",
@@ -111,7 +113,8 @@
     "Category": "Best Supporting Actor",
     "Title": "Once Upon a Time...In Hollywood",
     "Actor": "Brad Pitt",
-    "img_id": "supportingactor_brad"
+    "img_id": "supportingactor_brad",
+    "crit_pics": "X"
   },
   {
     "Category": "Best Actress",
@@ -141,7 +144,8 @@
     "Category": "Best Actress",
     "Title": "Judy",
     "Actor": "Renee Zellweger",
-    "img_id": "bestactress_renee"
+    "img_id": "bestactress_renee",
+    "crit_pics": "X"
   },
   {
     "Category": "Best Supporting Actress",
@@ -153,7 +157,8 @@
     "Category": "Best Supporting Actress",
     "Title": "Marriage Story",
     "Actor": "Laura Dern",
-    "img_id": "supportingactress_laura"
+    "img_id": "supportingactress_laura",
+    "crit_pics": "X"
   },
   {
     "Category": "Best Supporting Actress",
@@ -189,7 +194,8 @@
     "Category": "Best Director",
     "Title": 1917,
     "Actor": "Sam Mendes",
-    "img_id": "bestdirector_sam"
+    "img_id": "bestdirector_sam",
+    "crit_pics": "X"
   },
   {
     "Category": "Best Director",
