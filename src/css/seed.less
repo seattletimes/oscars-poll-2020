@@ -1,6 +1,41 @@
 @import "seattletimes";
 @img-width: 150px;
 @img-width-margin: (@img-width + 5);
+@mobileTablet: ~"(max-width: 959px)";
+
+.art-credit { text-align: center; display: block; float: none; }
+.marketing.marketing--sidebar { margin: auto; }
+
+.jump {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 5px;
+  text-align: center;
+
+  .jumpBox {
+    font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
+    background-color: @df-blue;
+    color: white;
+    padding: 3px 5px;
+    display: inline-block;
+    margin: 2px 1px;
+  }
+}
+
+.publish-date { padding: 0 5px 0 5px; margin: 10px auto 10px auto; text-align: center; }
+
+.graphic-hed {
+  font-size: 30px;
+
+  @media @mobileTablet {
+    padding: 0 5px 0 5px;
+  }
+}
+.graphic-chatter {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 5px 0 5px;
+}
 
 #nom-holder {
   max-width: 960px;
@@ -8,6 +43,8 @@
 
   h2 {
     border-bottom: 3px solid black;
+    font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
+    padding: 0 10px;
   }
 
   .catGroup {
@@ -19,79 +56,156 @@
       display: inline-block;
       margin-bottom: 10px;
       vertical-align: top;
-      padding: 5px;
+      // padding: 5px;
       border: 1px solid #aaa;
+      background-color: white;
+      transition: all .2s ease-in-out;
+
+
+
+      @media @mobileTablet {
+        width: 49%;
+      }
     }
+  }
+
+  .completeEntry.voted {
+    border: 3px solid @df-blue;
   }
 }
 
 .entry {
-  // display: inline-block;
   font-family: sans-serif;
-  // background-color: #eee;
-  // border-radius: 5px;
-  // margin-left: 5px;
-  padding: 10px 10px;
-  // width: ~"calc(100% - 155px)";
+  padding: 0px 10px 10px 10px;
+  position: relative;
+  height: 90px;
 
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, #fdce77));
-  background-image: linear-gradient(180deg, transparent 0%, #fdce77 0%);
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  -webkit-transition: background-size 0.7s;
-  transition: background-size 0.7s;
-  -webkit-transition-delay: 0.25s;
-  transition-delay: 0.25s;
+  // For the Bar Charts
+  // background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, #fdce77));
+  // background-image: linear-gradient(180deg, transparent 0%, #fdce77 0%);
+  // background-size: 0 100%;
+  // background-repeat: no-repeat;
+  // -webkit-transition: background-size 0.7s;
+  // transition: background-size 0.7s;
+  // -webkit-transition-delay: 0.25s;
+  // transition-delay: 0.25s;
 
 
-  .title { display: inline-block; font-weight: bold;}
-  .perVotes { display: inline-block; }
+  .cardInfo {
+    position: absolute;
+    top: 25%;
+
+    @media @mobileTablet {
+      top: 22%;
+    }
+  }
+
+  .title {
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    // font-family: 'Bowlby One SC', cursive;
+    @media @mobileTablet {
+      font-size: 18px;
+      line-height: 1.2em;
+    }
+  }
+
   .crit_pics {
     text-transform: uppercase;
-    text-align: right;
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 1px;
     font-weight: bold;
     color: goldenrod;
     display: none;
+    font-family: 'Bebas Neue', cursive;
+
+    @media @mobileTablet {
+      font-size: 14px;
+    }
 
     i { margin-right: 5px; }
   }
 }
 
-.completeEntry:hover {
-  cursor: pointer;
+.title.justTitle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.voted { background-color: golderod; }
+.completeEntry:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  z-index: 5;
+}
+
+// .voted { background-color: @df-blue; }
 
 .img {
   // max-width: @img-width;
   position: relative;
   vertical-align: top;
 
-  img { width: 100%; }
+  img { width: 100%; display: block; }
 
   .knockout{
     position: absolute;
-    bottom: 20%;
+    top: 0%;
     width: 100%;
+    height: 100%;
+
     text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-    font-family: sans-serif;
+
+    &.darken { background: rgba(0, 0, 0, 0.4); }
+
+    .youVote {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      background-color: @df-blue;
+
+      @media @mobileTablet {
+        font-size: 14px;
+      }
+
+      i { margin-right: 5px; }
+    }
+
+    .perVotes {
+      font-size: 5em;
+      font-weight: bold;
+      line-height: 0.9em;
+      font-family: 'Bebas Neue', cursive;
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      // font-family: 'Bowlby One SC', cursive;
+
+      .percentSign {
+        font-size: 0.5em;
+        vertical-align: top;
+
+      }
+
+      @media @mobileTablet {
+        font-size: 3.5em;
+      }
+     }
 
 
     &.voted {
-      color: goldenrod;
+      color: @df-blue;
     }
 
   }
 }
 
 .inTitle {
-  // width: ~"calc(100% - 155px)";
-  // display: inline-block;
-  // margin-left: 5px;
   font-size: 16px;
   font-family: sans-serif;
   font-style: italic;

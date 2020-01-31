@@ -52,13 +52,13 @@ function submitHandler(e, entry){
 
     var d = new Date();
     d.setTime(d.getTime() + 24 * 60 * 60 * 1000);
-    document.cookie = "OscVotes="+savedPicks + "; expires=" + d.toGMTString() + ";";
+    document.cookie = "OscVotesActor="+savedPicks + "; expires=" + d.toGMTString() + ";";
     e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: formData })
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message));
 
-    // getCookie("OscVotes");
+    // getCookie("OscVotesActor");
 }
 
 
@@ -88,12 +88,16 @@ $.each(votes, function(index, element) {
     }
 });
 
+console.log(catObj);
+
 function highlightChosenFadeOthers( chosenEntry ){
-  $( chosenEntry ).closest('.catGroup').find('.img img').css("opacity","0.4");
+  // $( chosenEntry ).closest('.catGroup').find('.img img').css("opacity","0.4");
+  $( chosenEntry ).closest('.catGroup').find('.knockout').addClass('darken');
   $( chosenEntry ).closest('.catGroup').find(".completeEntry").css("pointer-events","none");
   $( chosenEntry ).closest('.catGroup').find(".crit_pics").show();
   // $( chosenEntry ).closest('.completeEntry').addClass('voted').find('.img img').css('opacity','1');
   $( chosenEntry ).closest('.completeEntry').addClass('voted').find('.knockout').addClass('voted');
+  $( chosenEntry ).closest('.completeEntry').addClass('voted').find('.knockout').append('<div class="youVote"><i class="fa fa-star" aria-hidden="true"></i>Your Vote</div>');
 }
 
 
@@ -108,13 +112,13 @@ function showVoteTallies(selectedCategory) {
 
       // I work for the bar chart lines.
       // $('#nom-holder').find(`*[data-id="${ propertyName }"]`).css("background-size",`${percentage}% 100%`);
-      $('#nom-holder').find(`*[data-id="${ propertyName }"]`).closest('.completeEntry').find('.perVotes').empty().append(`${perVotes}%`);
+      $('#nom-holder').find(`*[data-id="${ propertyName }"]`).closest('.completeEntry').find('.perVotes').empty().append(`${perVotes}<span class="percentSign">%</span>`);
     }
   }
 }
 
-if (getCookie("OscVotes")) {
-  var pickedArray = getCookie("OscVotes");
+if (getCookie("OscVotesActor")) {
+  var pickedArray = getCookie("OscVotesActor");
   savedPicks.push(pickedArray);
   var pickedSplitArray = pickedArray.split(",");
   // console.log(savedPicks);
@@ -130,7 +134,46 @@ if (getCookie("OscVotes")) {
   console.log("Vote with reckless abandon");
 }
 
-//(getCookie("OscVotes"))
+//(getCookie("OscVotesActor"))
 
 // console.log(obj);
 // console.log(catObj);
+
+
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 50)
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });

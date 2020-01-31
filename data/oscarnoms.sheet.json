@@ -39,7 +39,8 @@
     "Category": "Best Picture",
     "Title": 1917,
     "Actor": "cast",
-    "img_id": "bestpic_1917"
+    "img_id": "bestpic_1917",
+    "crit_pics": "X"
   },
   {
     "Category": "Best Picture",
@@ -51,8 +52,7 @@
     "Category": "Best Picture",
     "Title": "Parasite",
     "Actor": "cast",
-    "img_id": "bestpic_parasite",
-    "crit_pics": "X"
+    "img_id": "bestpic_parasite"
   },
   {
     "Category": "Best Actor",

@@ -1,4 +1,4 @@
-<div class="catGroup">
+<div class="catGroup" id="bestPic">
 <% json.oscarnoms.forEach(function(item, i) { %>
   <% if(item.Category == "Best Picture") { %>
   <div class="completeEntry">
@@ -7,13 +7,10 @@
     <div class="knockout"><div class="perVotes"></div></div>
   </div>
   <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
-
-      <div class="title" data-item-title="<%= item.Title %>"><%= item.Title %></div>
-      <% if(item.crit_pics) { %>
-        <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
-      <% } %>
-
-      <!-- <div class="perVotes"></div> -->
+    <% if(item.crit_pics) { %>
+      <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Our Critic's Pick</div>
+    <% } %>
+      <div class="title justTitle" data-item-title="<%= item.Title %>"><%= item.Title %></div>
   </div>
   </div>
   <% } %>
@@ -21,7 +18,7 @@
 </div>
 
 <h2 class="pollHeads">Best Actor Nominees</h2>
-<div class="catGroup">
+<div class="catGroup" id="bestActor">
 <% json.oscarnoms.forEach(function(item, i) { %>
   <% if(item.Category == "Best Actor") { %>
   <div class="completeEntry">
@@ -30,13 +27,14 @@
     <div class="knockout"><div class="perVotes"></div></div>
   </div>
   <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
+    <% if(item.crit_pics) { %>
+      <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Our Critic's Pick</div>
+    <% } %>
 
+    <div class="cardInfo">
       <div class="title" data-item-title="<%= item.Title %>"><%= item.Actor %></div>
       <div class="inTitle"><%= item.Title %></div>
-      <% if(item.crit_pics) { %>
-        <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
-      <% } %>
-
+    </div>
   </div>
   </div>
   <% } %>
@@ -44,7 +42,7 @@
 </div>
 
 <h2 class="pollHeads">Best Actress Nominees</h2>
-<div class="catGroup">
+<div class="catGroup" id="bestActress">
   <% json.oscarnoms.forEach(function(item, i) { %>
     <% if(item.Category == "Best Actress") { %>
     <div class="completeEntry">
@@ -53,13 +51,15 @@
       <div class="knockout"><div class="perVotes"></div></div>
     </div>
     <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
+      <% if(item.crit_pics) { %>
+        <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Our Critic's Pick</div>
+      <% } %>
 
+      <div class="cardInfo">
         <div class="title" data-item-title="<%= item.Title %>"><%= item.Actor %></div>
         <div class="inTitle"><%= item.Title %></div>
+      </div>
 
-        <% if(item.crit_pics) { %>
-          <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
-        <% } %>
 
     </div>
     </div>
@@ -68,7 +68,7 @@
 </div>
 
 <h2 class="pollHeads">Best Supporting Actor Nominees</h2>
-<div class="catGroup">
+<div class="catGroup" id="bestSActor">
 <% json.oscarnoms.forEach(function(item, i) { %>
   <% if(item.Category == "Best Supporting Actor") { %>
   <div class="completeEntry">
@@ -77,13 +77,16 @@
     <div class="knockout"><div class="perVotes"></div></div>
   </div>
   <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
+    <% if(item.crit_pics) { %>
+      <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Our Critic's Pick</div>
+    <% } %>
 
+    <div class="cardInfo">
       <div class="title" data-item-title="<%= item.Title %>"><%= item.Actor %></div>
       <div class="inTitle"><%= item.Title %></div>
+    </div>
 
-      <% if(item.crit_pics) { %>
-        <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
-      <% } %>
+
 
   </div>
   </div>
@@ -92,7 +95,7 @@
 </div>
 
 <h2 class="pollHeads">Best Supporting Actress Nominees</h2>
-<div class="catGroup">
+<div class="catGroup" id="bestSActress">
 <% json.oscarnoms.forEach(function(item, i) { %>
   <% if(item.Category == "Best Supporting Actress") { %>
   <div class="completeEntry">
@@ -101,13 +104,16 @@
     <div class="knockout"><div class="perVotes"></div></div>
   </div>
   <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
+    <% if(item.crit_pics) { %>
+      <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Our Critic's Pick</div>
+    <% } %>
 
+    <div class="cardInfo">
       <div class="title" data-item-title="<%= item.Title %>"><%= item.Actor %></div>
       <div class="inTitle"><%= item.Title %></div>
+    </div>
 
-      <% if(item.crit_pics) { %>
-        <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
-      <% } %>
+
 
   </div>
   </div>
@@ -116,7 +122,7 @@
 </div>
 
 <h2 class="pollHeads">Best Director Nominees</h2>
-<div class="catGroup">
+<div class="catGroup" id="bestDirector">
   <% json.oscarnoms.forEach(function(item, i) { %>
     <% if(item.Category == "Best Director") { %>
     <div class="completeEntry">
@@ -125,13 +131,16 @@
       <div class="knockout"><div class="perVotes"></div></div>
     </div>
     <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
+      <% if(item.crit_pics) { %>
+        <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Our Critic's Pick</div>
+      <% } %>
 
+      <div class="cardInfo">
         <div class="title" data-item-title="<%= item.Title %>"><%= item.Actor %></div>
         <div class="inTitle"><%= item.Title %></div>
+      </div>
 
-        <% if(item.crit_pics) { %>
-          <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
-        <% } %>
+
 
     </div>
     </div>
