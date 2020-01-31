@@ -4,15 +4,16 @@
   <div class="completeEntry">
   <div class="img">
     <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+    <div class="knockout"><div class="perVotes"></div></div>
   </div>
   <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
 
       <div class="title" data-item-title="<%= item.Title %>"><%= item.Title %></div>
       <% if(item.crit_pics) { %>
-        <div class="crit_pics">X</div>
+        <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
       <% } %>
 
-      <div class="perVotes"></div>
+      <!-- <div class="perVotes"></div> -->
   </div>
   </div>
   <% } %>
@@ -26,16 +27,16 @@
   <div class="completeEntry">
   <div class="img">
     <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+    <div class="knockout"><div class="perVotes"></div></div>
   </div>
   <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
 
       <div class="title" data-item-title="<%= item.Title %>"><%= item.Actor %></div>
       <div class="inTitle"><%= item.Title %></div>
       <% if(item.crit_pics) { %>
-        <div class="crit_pics">X</div>
+        <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
       <% } %>
 
-      <div class="perVotes"></div>
   </div>
   </div>
   <% } %>
@@ -49,6 +50,7 @@
     <div class="completeEntry">
     <div class="img">
       <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+      <div class="knockout"><div class="perVotes"></div></div>
     </div>
     <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
 
@@ -56,10 +58,9 @@
         <div class="inTitle"><%= item.Title %></div>
 
         <% if(item.crit_pics) { %>
-          <div class="crit_pics">X</div>
+          <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
         <% } %>
 
-        <div class="perVotes"></div>
     </div>
     </div>
     <% } %>
@@ -73,6 +74,7 @@
   <div class="completeEntry">
   <div class="img">
     <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+    <div class="knockout"><div class="perVotes"></div></div>
   </div>
   <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
 
@@ -80,10 +82,9 @@
       <div class="inTitle"><%= item.Title %></div>
 
       <% if(item.crit_pics) { %>
-        <div class="crit_pics">X</div>
+        <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
       <% } %>
 
-      <div class="perVotes"></div>
   </div>
   </div>
   <% } %>
@@ -97,6 +98,7 @@
   <div class="completeEntry">
   <div class="img">
     <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+    <div class="knockout"><div class="perVotes"></div></div>
   </div>
   <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
 
@@ -104,10 +106,9 @@
       <div class="inTitle"><%= item.Title %></div>
 
       <% if(item.crit_pics) { %>
-        <div class="crit_pics">X</div>
+        <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
       <% } %>
 
-      <div class="perVotes"></div>
   </div>
   </div>
   <% } %>
@@ -121,6 +122,7 @@
     <div class="completeEntry">
     <div class="img">
       <img src="assets/nompics/<%= item.img_id %>.jpg"/>
+      <div class="knockout"><div class="perVotes"></div></div>
     </div>
     <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
 
@@ -128,12 +130,10 @@
         <div class="inTitle"><%= item.Title %></div>
 
         <% if(item.crit_pics) { %>
-          <div class="crit_pics">X</div>
+          <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Editor's Pick</div>
         <% } %>
 
-        <div class="perVotes"></div>
     </div>
-    <div class="roleIn"><%= item.Title %></div>
     </div>
     <% } %>
   <% }) %>

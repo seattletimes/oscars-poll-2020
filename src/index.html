@@ -6,6 +6,7 @@
       <%= t.include("partials/_dataLayer.html") %>
       <%= t.include("partials/_gtm.html") %>
     <% } %>
+    <script src="https://use.fontawesome.com/193ffcc2d7.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
@@ -18,8 +19,13 @@
       <div id="nom-holder">
         <h2 class="pollHeads">Best Picture Nominees</h2>
         <%= t.include("partials/_category.html") %>
-        
+
       </div>
+
+      <figcaption>
+        <span class="data-source">Source: Photos courtesy of film studios</span>
+        <span class="art-credit">Lauren Flannery / The Seattle Times</span>
+      </figcaption>
     </responsive-child>
 
     <script src="app.js" async></script>

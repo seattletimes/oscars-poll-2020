@@ -6,12 +6,14 @@ var width = $(".entry").width();
 var obj = {};
 var catObj = {};
 var savedPicks = [];
+// var userID = (Math.round(Math.random() * 1000000));
+// console.log(userID);
 
 
 
 function getCookie(name) {
     var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
-    // console.log(v);
+    console.log(v);
     return v ? v[2] : null;
 }
 
@@ -39,13 +41,11 @@ function submitHandler(e, entry){
       catObj[category] = 1;
     }
 
-    console.log(catObj);
-    console.log(obj);
-
 
     formData.append("vote", title);
     formData.append("category", category);
     formData.append("actor", actor);
+    // formData.append("usernum", userID);
 
     showVoteTallies(category);
 
@@ -62,20 +62,14 @@ function submitHandler(e, entry){
 }
 
 
-$( ".entry" ).click(function(a) {
-  var thisEntry = this;
+$( ".completeEntry" ).click(function(a) {
+  var thisEntry = $(this).find('.entry');
   submitHandler(a, thisEntry);
   highlightChosenFadeOthers(thisEntry);
 });
 
 
-
-
-
 ///////////////////////
-
-
-
 
 $.each(votes, function(index, element) {
     // total = total + 1;
@@ -95,9 +89,11 @@ $.each(votes, function(index, element) {
 });
 
 function highlightChosenFadeOthers( chosenEntry ){
-  $( chosenEntry ).closest('.catGroup').find('.completeEntry').css("opacity","0.6");
-  $( chosenEntry ).closest('.catGroup').find(".entry").css("pointer-events","none");
-  $( chosenEntry ).closest('.completeEntry').addClass('voted').css('opacity','1');
+  $( chosenEntry ).closest('.catGroup').find('.img img').css("opacity","0.4");
+  $( chosenEntry ).closest('.catGroup').find(".completeEntry").css("pointer-events","none");
+  $( chosenEntry ).closest('.catGroup').find(".crit_pics").show();
+  // $( chosenEntry ).closest('.completeEntry').addClass('voted').find('.img img').css('opacity','1');
+  $( chosenEntry ).closest('.completeEntry').addClass('voted').find('.knockout').addClass('voted');
 }
 
 
@@ -110,13 +106,14 @@ function showVoteTallies(selectedCategory) {
       var percentage = (value / catTotal) * 100;
       var perVotes = Math.round(percentage);
 
-      $('#nom-holder').find(`*[data-id="${ propertyName }"]`).css("background-size",`${percentage}% 100%`);
-      $('#nom-holder').find(`*[data-id="${ propertyName }"]`).find('.perVotes').append(`${perVotes}%`);
+      // I work for the bar chart lines.
+      // $('#nom-holder').find(`*[data-id="${ propertyName }"]`).css("background-size",`${percentage}% 100%`);
+      $('#nom-holder').find(`*[data-id="${ propertyName }"]`).closest('.completeEntry').find('.perVotes').empty().append(`${perVotes}%`);
     }
   }
 }
 
-if (getCookie("asdasd")) {
+if (getCookie("OscVotes")) {
   var pickedArray = getCookie("OscVotes");
   savedPicks.push(pickedArray);
   var pickedSplitArray = pickedArray.split(",");
@@ -135,5 +132,5 @@ if (getCookie("asdasd")) {
 
 //(getCookie("OscVotes"))
 
-console.log(obj);
-console.log(catObj);
+// console.log(obj);
+// console.log(catObj);
