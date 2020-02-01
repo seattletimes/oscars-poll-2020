@@ -2,11 +2,11 @@
   "s3": {
     "stage": {
       "bucket": "projects-staging.seattletimes.com",
-      "path": "despotic-tap"
+      "path": "reciprocal-bordeaux"
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2020/features/oscars-poll/"
     }
   },
   "title": "",
@@ -18,5 +18,5 @@
   "sheets": ["1aeTOKnktCL0PdhiDigOZLM08UfFc7NDO88pu3Aiw5Ds"],
   "docs": [],
   "embedded": true,
-  "production": false
+  "production": true
 }
