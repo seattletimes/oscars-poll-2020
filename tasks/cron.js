@@ -9,7 +9,7 @@ Runs tasks on an automated basis
 var branch = "prod"; //Git branch for deployment
 var interval = 1000 * 60 * 5; //30 minutes by default Boy I hope that is 10 minutes
 var commands = [
-  "grunt sheets static publish" //deploy
+  "grunt sheets static publish:live" //deploy
 ];
 
 /** end config **/
