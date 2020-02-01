@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "vote": "Joker",
+    "timestamp": "1/31/2020",
+    "category": "Best Director",
+    "actor": "Todd Phillips"
+  },
+  {
+    "vote": "Once Upon a Time...in Hollywood",
+    "timestamp": "1/31/2020",
+    "category": "Best Picture",
+    "actor": "cast"
+  },
+  {
+    "vote": "Parasite",
+    "timestamp": "1/31/2020",
+    "category": "Best Director",
+    "actor": "Bong Joon Ho"
+  },
+  {
+    "vote": "Bombshell",
+    "timestamp": "1/31/2020",
+    "category": "Best Actress",
+    "actor": "Charlize Theron"
+  },
+  {
+    "vote": "Once Upon a Time...in Hollywood",
+    "timestamp": "1/31/2020",
+    "category": "Best Actor",
+    "actor": "Leonardo DiCaprio"
+  },
+  {
+    "vote": "Marriage Story",
+    "timestamp": "1/31/2020",
+    "category": "Best Supporting Actress",
+    "actor": "Laura Dern"
+  },
+  {
+    "vote": "The Irishman",
+    "timestamp": "1/31/2020",
+    "category": "Best Supporting Actor",
+    "actor": "Joe Pesci"
+  },
+  {
+    "vote": "Once Upon a Time...in Hollywood",
+    "timestamp": "1/31/2020",
+    "category": "Best Supporting Actor",
+    "actor": "Brad Pitt"
+  },
+  {
+    "vote": "Little Women",
+    "timestamp": "1/31/2020",
+    "category": "Best Supporting Actress",
+    "actor": "Florence Pugh"
+  },
+  {
+    "vote": "Pain and Glory",
+    "timestamp": "1/31/2020",
+    "category": "Best Actor",
+    "actor": "Antonio Banderas"
+  },
+  {
+    "vote": "The Irishman",
+    "timestamp": "1/31/2020",
+    "category": "Best Picture",
+    "actor": "cast"
+  },
+  {
+    "vote": "Richard Jewell",
+    "timestamp": "1/31/2020",
+    "category": "Best Supporting Actress",
+    "actor": "Kathy Bates"
+  },
+  {
+    "vote": "Pain and Glory",
+    "timestamp": "1/31/2020",
+    "category": "Best Actor",
+    "actor": "Antonio Banderas"
+  },
+  {
+    "vote": "Ford V Ferrari ",
+    "timestamp": "1/31/2020",
+    "category": "Best Picture",
+    "actor": "cast"
+  },
+  {
+    "vote": "Judy",
+    "timestamp": "1/31/2020",
+    "category": "Best Actress",
+    "actor": "Renee Zellweger"
+  },
+  {
+    "vote": "A Beautiful Day in the Neighborhood",
+    "timestamp": "1/31/2020",
+    "category": "Best Supporting Actor",
+    "actor": "Tom Hanks"
+  }
+]

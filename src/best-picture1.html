@@ -21,7 +21,7 @@
       <h4 class="graphic-chatter">Vote by clicking on a nominee, then compare your answers with predictions from
         <a href="https://www.seattletimes.com/author/moira-macdonald/" target="_blank" rel="nofollow noopener noreferrer"> Seattle Times movie critic Moira Macdonald</a>
         and the other movie buffs who weighed in.</h4>
-        
+
       <h2 class="pollHeads">Best Picture Nominees <span class="numVotes"></span></h2>
       <div class="catGroup" id="bestPic" data-head-category="Best Picture">
       <% json.oscarnoms.forEach(function(item, i) { %>
@@ -33,7 +33,7 @@
         </div>
         <div class="entry" data-id="<%= item.Title %><%= item.Category %><%= item.Actor %>" data-title="<%= item.Title %>" data-category="<%= item.Category %>" data-actor="<%= item.Actor %>">
           <% if(item.crit_pics) { %>
-            <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Our Critic's Pick</div>
+            <div class="crit_pics"><i class="fa fa-star" aria-hidden="true"></i>Our Critic's Prediction</div>
           <% } %>
             <div class="title justTitle" data-item-title="<%= item.Title %>"><%= item.Title %></div>
         </div>
