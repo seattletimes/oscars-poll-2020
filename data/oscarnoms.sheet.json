@@ -44,7 +44,7 @@
   },
   {
     "Category": "Best Picture",
-    "Title": "Once Upon a Time...In Hollywood",
+    "Title": "Once Upon a Time...in Hollywood",
     "Actor": "cast",
     "img_id": "bestpic_hollywood"
   },
@@ -62,7 +62,7 @@
   },
   {
     "Category": "Best Actor",
-    "Title": "Once Upon a Time...In Hollywood",
+    "Title": "Once Upon a Time...in Hollywood",
     "Actor": "Leonardo DiCaprio",
     "img_id": "bestactor_leo"
   },
@@ -111,7 +111,7 @@
   },
   {
     "Category": "Best Supporting Actor",
-    "Title": "Once Upon a Time...In Hollywood",
+    "Title": "Once Upon a Time...in Hollywood",
     "Actor": "Brad Pitt",
     "img_id": "supportingactor_brad",
     "crit_pics": "X"
@@ -131,7 +131,7 @@
   {
     "Category": "Best Actress",
     "Title": "Little Women",
-    "Actor": "Saorise Ronan",
+    "Actor": "Saoirse Ronan",
     "img_id": "bestactress_ronan"
   },
   {
@@ -199,7 +199,7 @@
   },
   {
     "Category": "Best Director",
-    "Title": "Once Upon a Time...In Hollywood",
+    "Title": "Once Upon a Time...in Hollywood",
     "Actor": "Quentin Tarantino",
     "img_id": "bestdirector_quentin"
   },

@@ -1,3 +1,4 @@
+require("component-responsive-frame/child");
 var $ = require('jquery');
 var scriptURL = 'https://script.google.com/macros/s/AKfycbzsbIC6oCOwBGlZpHyeiwzQtcNKmnnzvVlgRZKFOWsfCBDdIWE/exec';
 var votes = require("../../data/predictions.sheet.json");
@@ -90,6 +91,11 @@ $.each(votes, function(index, element) {
 
 console.log(catObj);
 
+// for(var cat in catObj) {
+//   var catTotal = catObj[cat];
+//
+// }
+
 function highlightChosenFadeOthers( chosenEntry ){
   // $( chosenEntry ).closest('.catGroup').find('.img img').css("opacity","0.4");
   $( chosenEntry ).closest('.catGroup').find('.knockout').addClass('darken');
@@ -102,13 +108,17 @@ function highlightChosenFadeOthers( chosenEntry ){
 
 
 function showVoteTallies(selectedCategory) {
+  var catTotal = catObj[selectedCategory];
+  $('#nom-holder').find(`*[data-head-category="${ selectedCategory }"]`).prev('.pollHeads').find('.numVotes').append(`${catTotal} votes`);
+
   for(var propertyName in obj) {
     if( propertyName.includes(selectedCategory) ){
       var value = obj[propertyName];
-      var catTotal = catObj[selectedCategory];
-      // console.log(catTotal);
+
+      console.log( catTotal );
       var percentage = (value / catTotal) * 100;
       var perVotes = Math.round(percentage);
+
 
       // I work for the bar chart lines.
       // $('#nom-holder').find(`*[data-id="${ propertyName }"]`).css("background-size",`${percentage}% 100%`);

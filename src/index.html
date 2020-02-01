@@ -15,15 +15,15 @@
       <%= t.include("partials/_gtmNoScript.html") %>
     <% } %>
     <responsive-child>
-      <%= t.include("partials/_nav.html") %>
+      <!-- <%= t.include("partials/_nav.html") %> -->
 
 
       <!-- content goes here -->
-      <h3 class="graphic-hed">Who do YOU think will win the 2020 Oscars?</h3>
-      <h4 class="graphic-chatter">Who do you think will win Academy Awards in the six most popular categories?
-        Vote by clicking on your chosen nominee, and compare your answer to picks from our
-        <a href="https://www.seattletimes.com/author/moira-macdonald/" target="_blank" rel="nofollow noopener noreferrer"> movie critic Moira Macdonald</a>,
-        and the selections from other movie buffs who voted.</h4>
+      <h3 class="graphic-hed">Who do you think will win big at the 2020 Oscars?</h3>
+      <h4 class="graphic-chatter">As Oscar Sunday approaches, it's prediction time: Who do you think will win the Academy
+        Awards in the six major categories? Vote by clicking on a nominee, then compare your answers with predictions from
+        <a href="https://www.seattletimes.com/author/moira-macdonald/" target="_blank" rel="nofollow noopener noreferrer"> Seattle Times movie critic Moira Macdonald</a>
+        and the other movie buffs who weighed in.</h4>
 
         <p class="publish-date">Published Feb. 3, 2020</p>
 
@@ -38,16 +38,17 @@
         </div>
 
       <div id="nom-holder">
-        <h2 class="pollHeads">Best Picture Nominees</h2>
+        <h2 class="pollHeads">Best Picture Nominees <span class="numVotes"></span></h2>
         <%= t.include("partials/_category.html") %>
 
       </div>
 
       <figcaption>
         <span class="art-credit">Voting will be disabled after Feb. 10, 2020</span>
+        <span class="art-credit">Voting will be disabled after Feb. 10, 2020</span>
       </figcaption>
 
-      <div class="module">
+      <!-- <div class="module">
         <section class="thin-div">
 	         <div class="center">Credits</div>
         </section>
@@ -61,11 +62,11 @@
 
             <p class="project-credit"><strong>Photography: </strong>Courtesy of film studios</p>
         </section>
-      </div>
+      </div> -->
 
     </responsive-child>
-    <%= t.include("partials/_marketing.html", {type: "subscribe", placement: "sidebar"}) %>
-    <%= t.include("partials/_navBottom.html") %>
+    <!-- <%= t.include("partials/_marketing.html", {type: "subscribe", placement: "sidebar"}) %>
+    <%= t.include("partials/_navBottom.html") %> -->
 
 
 
