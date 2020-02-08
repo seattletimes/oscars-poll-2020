@@ -7,8 +7,6 @@ var width = $(".entry").width();
 var obj = {};
 var catObj = {};
 var savedPicks = [];
-// var userID = (Math.round(Math.random() * 1000000));
-// console.log(userID);
 
 
 
@@ -24,7 +22,6 @@ function submitHandler(e, entry){
     var actor = $( entry ).attr( "data-actor" );
     var thisMovie = $( entry ).attr( "data-id" );
     savedPicks.push(thisMovie + "|" + category);
-    // console.log(savedPicks);
 
 
     var formData = new FormData();
@@ -46,7 +43,6 @@ function submitHandler(e, entry){
     formData.append("vote", title);
     formData.append("category", category);
     formData.append("actor", actor);
-    // formData.append("usernum", userID);
 
     showVoteTallies(category);
 
@@ -59,7 +55,7 @@ function submitHandler(e, entry){
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message));
 
-    // getCookie("OscVotesActor");
+    getCookie("OscVotesActor");
 }
 
 
@@ -73,7 +69,6 @@ $( ".completeEntry" ).click(function(a) {
 ///////////////////////
 
 $.each(votes, function(index, element) {
-    // total = total + 1;
     var thisMovie = element.vote + element.category + element.actor;
 
     if ( obj.hasOwnProperty(thisMovie) ) {
@@ -89,12 +84,6 @@ $.each(votes, function(index, element) {
     }
 });
 
-console.log(catObj);
-
-// for(var cat in catObj) {
-//   var catTotal = catObj[cat];
-//
-// }
 
 function highlightChosenFadeOthers( chosenEntry ){
   // $( chosenEntry ).closest('.catGroup').find('.img img').css("opacity","0.4");
@@ -131,11 +120,9 @@ if (getCookie("OscVotesActor")) {
   var pickedArray = getCookie("OscVotesActor");
   savedPicks.push(pickedArray);
   var pickedSplitArray = pickedArray.split(",");
-  // console.log(savedPicks);
 
   $.each(pickedSplitArray, function(index, element) {
     var movAndCat = element.split("|");
-    // console.log(movAndCat);
     showVoteTallies(movAndCat[1]);
     highlightChosenFadeOthers( $(`*[data-id="${ movAndCat[0] }"]`)  );
   });
@@ -143,47 +130,3 @@ if (getCookie("OscVotesActor")) {
 } else {
   console.log("Vote with reckless abandon");
 }
-
-//(getCookie("OscVotesActor"))
-
-// console.log(obj);
-// console.log(catObj);
-
-
-
-// // Select all links with hashes
-// $('a[href*="#"]')
-//   // Remove links that don't actually link to anything
-//   .not('[href="#"]')
-//   .not('[href="#0"]')
-//   .click(function(event) {
-//     // On-page links
-//     if (
-//       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-//       &&
-//       location.hostname == this.hostname
-//     ) {
-//       // Figure out element to scroll to
-//       var target = $(this.hash);
-//       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-//       // Does a scroll target exist?
-//       if (target.length) {
-//         // Only prevent default if animation is actually gonna happen
-//         event.preventDefault();
-//         $('html, body').animate({
-//           scrollTop: (target.offset().top - 50)
-//         }, 1000, function() {
-//           // Callback after animation
-//           // Must change focus!
-//           var $target = $(target);
-//           $target.focus();
-//           if ($target.is(":focus")) { // Checking if the target was focused
-//             return false;
-//           } else {
-//             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-//             $target.focus(); // Set focus again
-//           };
-//         });
-//       }
-//     }
-//   });
